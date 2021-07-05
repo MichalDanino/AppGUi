@@ -1,0 +1,152 @@
+
+<body>
+
+    <!-- 
+    <h2>Registration</h2>
+    <form class="form-horizontal" [formGroup]="userForm" (submit)="addUser()">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Name:</label>
+            <div class="col-sm-10">
+                <input class="form-control" formControlName="name" id="name" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+                <input class="form-control" formControlName="email" id="email" />
+    
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="password">Password:</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="password" formControlName="password" id="password" />
+    
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="confirmPassword">Confirm Password:</label>
+            <div class="col-sm-10">
+                <input class="form-control" type="password" formControlName="confirmPassword" id="confirmPassword" />
+            </div>
+        </div>
+        <div>
+            <input id="ac" type="checkbox" formControlName="accept">
+            <label for="ac"> I accept all terms</label>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" [disabled]="!userForm.valid" class="btn btn-success"
+                    style="background-color: #E91E63; border-color: white;">Submit</button>
+            </div>
+        </div>
+    </form>
+    
+     -->
+
+    <br><br><br>
+    <section id="contact-map" class="section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    
+                </div>
+                <div class="col-lg-7 col-md-12 col-xs-12">
+                    <div class="container-form wow fadeInLeft" data-wow-delay="0.4s">
+                        <div class="form-wrapper">
+
+                            <form class="form-horizontal"  (submit)="SignUpUser()" name="frm">
+                                <div class="row">
+                                    <!--name-->
+                                    <div class="col-md-12 form-line">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" [(ngModel)]="newUser.name"
+                                                name="name" placeholder="First Name" required
+                                                data-error="Please enter your name">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <!--email-->
+                                    <div class="col-md-12 form-line">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" [(ngModel)]="newUser.EmailUser" 
+                                              name="email"  placeholder="Email" required data-error="Please enter your Email">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                     <!--id-->
+                                     <div class="col-md-12 form-line">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" id="name" [(ngModel)]="newUser.IDUser"
+                                                name="id" placeholder="תעודת זהות" required
+                                                data-error="Please enter your id">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                     <!--city-->
+                                     <div class="col-md-12 form-line">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" [(ngModel)]="newUser.CityAdderssUser"
+                                                name="city" placeholder="עיר מגורים" required
+                                                data-error="Please enter your city">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                  <!--Area-->
+                                  <div class="col-md-12 form-line">
+                                    <div class="form-group">
+                                        <select *ngFor="let item of listNamesArea" #myHtml>
+                                            <option>{{item}}</option>
+                                        </select>
+                                        
+                                    </div>
+                                </div>
+
+
+                                
+
+                                   
+
+                                    <div class="form-submit" style="text-align: center;">
+                                        <button type="submit" class="btn btn-common sub-btn" data-style="zoom-in"
+                                            data-spinner-size="30" name="submit" id="submit"
+                                            style="font-family: inherit;">
+                                            <span class="ladda-label"><i class="fa fa-check" aria-hidden="true"></i>
+                                                הירשם</span>
+                                        </button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<!--
+<p>user works!</p>
+<button (click)="SignUpUser()">get list</button>
+<form  (submit) = "GetList()" name="frm">
+    <div style="background-color: black; width: 500px; height: 6000px;">
+        <input matInput placeholder="תעודת זהות"[(ngModel)]="id" name="nameId"  />
+        <button (click)="SignInUser()"></button>
+    </div>
+
+  
+</form>
+<form  (submit) = "GetList()" name="frm">
+    <div>
+        <input matInput placeholder="תעודת זהות"[(ngModel)]="id" name="nameId"  />
+          <input matInput placeholder="תעודת זהות"[(ngModel)]="id" name="nameId"  />
+          <input matInput placeholder="תעודת זהות"[(ngModel)]="id" name="nameId"  />
+          <input matInput placeholder="תעודת זהות"[(ngModel)]="id" name="nameId"  />
+          <input matInput placeholder="תעודת זהות"[(ngModel)]="id" name="nameId"  />
+          <button (click)="SignInUser()"></button>
+    </div>
+
+  
+</form>-->
