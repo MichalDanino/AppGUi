@@ -1,0 +1,28 @@
+<style>
+    #grad1 {
+        height: 18px;
+        background-image: linear-gradient(to top, rgba(0, 102, 255, 0), rgb(0, 110, 255));
+    }
+</style>
+
+<div *ngIf="Pup==true">
+    <label>איך את ה רוצה לבצע את השיפוץ?</label>
+    <div>
+    <input type="checkbox"/><h5>בעצמי!!</h5>
+</div>
+<div>
+    <input type="checkbox"/><h5>פועל שיעשה את העבודה!!</h5>
+</div>
+</div>
+<div>
+        <div #myCategory1 (click)="checked('אמבטיה')" style="background-color: antiquewhite">אמבטיה</div>
+        <div #myCategory2 (click)="checked('חדר')" style="background-color: antiquewhite;">חדר</div>
+        <div #myCategory3 (click)="checked('שרותים')" style="background-color: antiquewhite;">שרותים</div>
+        <div #myCategory4 (click)="checked('שרותים+אמבטיה')" style="background-color: antiquewhite;">שרותים+אמבטיה</div> 
+        <div #myCategory5 (click)="checked('ריצוף')" style="background-color: antiquewhite;">ריצוף</div>
+        <div #myCategory6 (click)="checked('צביעה')" style="background-color: antiquewhite;">צביעה</div>
+        <div #myCategory7 (click)="checked('אריחים לקיר')" style="background-color: antiquewhite;">אריחים לקיר</div>
+</div>
+<button (click)="print()">print</button>
+
+<button (click)="routeToScraping()"></button>
