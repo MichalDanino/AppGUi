@@ -14,15 +14,12 @@
     <input type="checkbox"/><h5>פועל שיעשה את העבודה!!</h5>
 </div>
 </div>
-<div>
-        <div #myCategory1 (click)="checked('אמבטיה')" style="background-color: antiquewhite">אמבטיה</div>
-        <div #myCategory2 (click)="checked('חדר')" style="background-color: antiquewhite;">חדר</div>
-        <div #myCategory3 (click)="checked('שרותים')" style="background-color: antiquewhite;">שרותים</div>
-        <div #myCategory4 (click)="checked('שרותים+אמבטיה')" style="background-color: antiquewhite;">שרותים+אמבטיה</div> 
-        <div #myCategory5 (click)="checked('ריצוף')" style="background-color: antiquewhite;">ריצוף</div>
-        <div #myCategory6 (click)="checked('צביעה')" style="background-color: antiquewhite;">צביעה</div>
-        <div #myCategory7 (click)="checked('אריחים לקיר')" style="background-color: antiquewhite;">אריחים לקיר</div>
+<div *ngFor="let item of listOfCategory; let j=index "  >
+        <div  (click)="checked($event, j)" class="dddd" id="{{item}}" name="caterrro">{{item}}
 </div>
-<button (click)="print()">print</button>
 
-<button (click)="routeToScraping()"></button>
+</div>
+
+<button (click)="Continue()">המשך...</button>
+
+<button (click)="ddd()">חיחלחמ</button>

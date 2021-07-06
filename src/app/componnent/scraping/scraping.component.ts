@@ -52,12 +52,10 @@ listmaterial = new Array<material>();
 //this.getUser();
   }
   @ViewChild(MatTable) table: MatTable<listOfNameMat>;
- 
-getUser(){
-this.matrialService.getListM().subscribe(lisd => {(this.listmaterial) = lisd})
-}
+
 getMatrialByReno(){
-  return  this.matrialService.getMatrialByReno('Room').subscribe(m=>{
+  let categories = sessionStorage.getItem('CategorySelected');
+  return  this.matrialService.getMatrialByReno(categories).subscribe(m=>{
     (console.log(m));
   })
 }

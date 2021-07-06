@@ -14,7 +14,7 @@ export class UserComponent implements OnInit {
 NewUser:User= new User();
 NamesArea:string[]=[];
 @ViewChild ('myArea',{static:false}) area:ElementRef;
-
+Show:false;
   ngOnInit(): void {
     this.GetNameArea()
   }
