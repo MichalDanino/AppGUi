@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ok } from 'assert';
 import { Observable } from 'rxjs';
+import { NgwWowModule } from 'ngx-wow';
 
 @Component({
   selector: 'app-root',

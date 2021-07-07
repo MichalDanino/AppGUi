@@ -22,6 +22,7 @@ import { WorkerComponent } from './componnent/worker/worker.component';
 import { LoginComponent } from './componnent/login/login.component';
 import { HomeComponent } from './componnent/home/home.component';
 import {MatInputModule} from '@angular/material/input';
+import { NgwWowModule } from 'ngx-wow';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import {MatInputModule} from '@angular/material/input';
     BrowserAnimationsModule,
     MatCheckboxModule,
     CdkTableModule,
-    MatInputModule
+    MatInputModule,
+    NgwWowModule
   
   ],
   providers: [],
