@@ -17,8 +17,8 @@ export class MaterialService {
    GetNameCategory():Observable<string[]>{
      return this.https.get<string[]>(`${this.Url}/GetNameRenovation`)
    }
-   getMatrialByReno(NameReno:string):Observable<string[]>
+   getMatrialByReno(NameReno:string):Observable<Map<string,Map<string,string[] >>>
    {
-return this.https.get<string[]>(this.Url+"/GetNmaeByRevo/"+NameReno)
+return this.https.get<Map<string,Map<string,string[] >>>(this.Url+"/GetNmaeByRevo/"+NameReno)
    }
 }

@@ -7,10 +7,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor( private router:Router) { }
+  listArtical:string[]=[];
+  constructor( private router:Router) {    this.listArtical = ["a", "b", "c", "d"];
+ }
 
   ngOnInit(): void {
+
   }
   GoToCategory()
   {

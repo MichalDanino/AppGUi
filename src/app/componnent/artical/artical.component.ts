@@ -6,8 +6,10 @@ import { ArticalService } from 'src/app/Service/artical.service';
   styleUrls: ['./artical.component.css']
 })
 export class ArticalComponent implements OnInit {
-
-  constructor(private articalService:ArticalService) { }
+listArtical:string[]=[];
+  constructor(private articalService:ArticalService) {
+    this.listArtical = ["a", "b", "c", "d"];
+   }
 
   ngOnInit(): void {
   }

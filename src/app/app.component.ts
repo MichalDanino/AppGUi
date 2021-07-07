@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ok } from 'assert';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,9 @@ export class AppComponent {
   Gouser(){
   this.visible=false;
   this.router.navigate(['/app-user'])
+}
+ userLogedIn():boolean{
+  return true;
 }
 }
 

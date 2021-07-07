@@ -21,6 +21,7 @@ import { CategoryComponent } from './componnent/category/category.component';
 import { WorkerComponent } from './componnent/worker/worker.component';
 import { LoginComponent } from './componnent/login/login.component';
 import { HomeComponent } from './componnent/home/home.component';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { HomeComponent } from './componnent/home/home.component';
     MatTableModule,
     BrowserAnimationsModule,
     MatCheckboxModule,
-    CdkTableModule
+    CdkTableModule,
+    MatInputModule
   
   ],
   providers: [],
